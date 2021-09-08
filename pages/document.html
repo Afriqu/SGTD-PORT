@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{marginMSC-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+p{
+  background:darkslategray;
+  color:black;
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">Menu</a>
+  <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">accuiel</a> 
+  <a href="apropos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">a propos</a> 
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">contact</a>
+  <a href="service.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Service</a>
+  <a href="document.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">document</a>&
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SGTD</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  <h1><b>Document</b></h1>
+    
+      <p>
+        Bienvenue chez SGTD Doraleh Terminal
+        
+        Société de Gestion du Terminal à conteneurs de Doraleh (SGTD) est l’opérateur du terminal le plus moderne et le plus avancé de l’Afrique de l’Est. Principal facilitateur du commerce, le terminal le plus performant de la région relie les marchés locaux à la chaîne d’approvisionnement mondiale.
+        
+        Situé à Djibouti, à l’entrée de la Mer Rouge et sur la deuxième voie de navigation la plus fréquentée au monde, SGTD est le port de choix pour les marchés d’Afrique de l’Est ainsi qu’une plaque tournante régionale pour le transbordement, agissant ainsi comme principale entrée vers l’Éthiopie enclavée.
+        
+      </p>
+      <table style="background-color: silver;width:100%;margin: 0 auto;border:2px solid black">
+        <!--the "margin: 0 auto" style aligns the table to the center-->
+        <colgroup>
+          <col style="background-color:tomato;">
+          <col style="background-color:teal;">
+          <col style="background-color:violet">
+          <col style="background-color:yellow;">
+          <col style="background-color:paleturquoise">
+          <col style="background-color:navy">
+          </colgroup>
+        <thead>
+          <tr>
+          <th>Vessel name</th>
+          <th>Voyage number</th>
+          <th>Arrival pilot station</th>
+          <th>Berth time</th>
+          <th>Departure</th>
+          <th>Shipping line</th>
+          <tr>
+              <tr>
+                  <th>GFS PRESTIGE</th>
+                  <th>0012E</th>
+                  <th>26.06.2021- 05:00PM</th>
+                  <th>27.06.2021- 09:00PM</th>
+                  <th>28.06.2021- 06:00PM</th>
+                  <th>HLL</th>
+                  <tr>
+                      <tr>
+                          <th>SCIO SKY</th>
+                          <th>2107</th>
+                          <th>26.07.2021 - 08:00PM	</th>
+                          <th>26.07.2021 - 09:00PM</th>
+                          <th>28.07.2021 - 00:00AM</th>
+                          <th>HLL</th>
+                          <tr>
+                              <tr>
+                                  <th>CELSIUS NICOSIA</th>
+                                  <th>128W</th>
+                                  <th>26.07.2021- 11:00PM</th>
+                                  <th>27.07.2021- 00:00PM</th>
+                                  <th>28.07.2021- 00:00AM</th>
+                                  <th>MSK</th>
+                                  <tr>
+                                      <tr>
+                                          <th>COSCO SHIPPING KILMANDJARO</th>
+                                          <th>0021W</th>
+                                          <th>28.07.2021- 12:00PM</th>
+                                          <th>28.07.2021- 02:00PM</th>
+                                          <th>29.07.2021- 04:00PM</th>
+                                          <th>COS</th>
+                                          <tr>
+                                              <tr>
+                                                  <th>SNOOPY</th>
+                                                  <th>2104</th>
+                                                  <th>26.07.2021 - 06:00PM</th>
+                                                  <th>26.07.2021 - 07:00PM</th>
+                                                  <th>26.07.2021 - 08:00PM</th>
+                                                  <th>HLL</th>
+                                                  <tr>
+                                                      <tr>
+                                                          <th>MAERSK DENVER</th>
+                                                          <th>125E</th>
+                                                          <th>31.07.2021- 03:00PMi</th>
+                                                          <th>31.07.2021- 08:00PM</th>
+                                                          <th>01.08.2021- 10:00PM</th>
+                                                          <th>MSK</th>
+                                                          <tr>
+                                                              <tr>
+                                                                  <th>KOTA NILAM</th>
+                                                                  <th>0163E</th>
+                                                                  <th>01.08.2021- 00:00AM</th>
+                                                                  <th>01.08.2021- 02:00AM</th>
+                                                                  <th>02.08.2021- 02:00AM</th>
+                                                                  <th>PIL</th>
+                                                                  <tr>
+                                                                      <tr>
+                                                                          <th>GFS PRIDE</th>
+                                                                          <th>0012E</th>
+                                                                          <th>01.08.2021 - 02:00PM</th>
+                                                                          <th>01.08.2021- 04:00PM</th>
+                                                                          <th>02.08.2021- 10:00AM</th>
+                                                                          <th>HLL</th>
+                                                                          <tr>
+                                                                              <tr>
+                                                                                  <th>MSC MARIA CLARA</th>
+                                                                                  <th>SD126A</th>
+                                                                                  <th>SD126A	02.08.2021- 10:00AM	</th>
+                                                                                  <th>02.08.2021- 01:00PM</th>
+                                                                                  <th>03.08.2021- 08:00PM	</th>
+                                                                                  <th>MSC</th>
+                                                                                  <tr>
+                                                                                      <tr>
+                                                                                          <th>MERKUR ARCHIPELAGO</th>
+                                                                                          <th>125E</th>
+                                                                                          <th>02.08.2021- 10:00AM</th>
+                                                                                          <th>02.08.2021 - 12:00PM</th>
+                                                                                          <th>03.08.2021- 09:00PM</th>
+                                                                                          <th>MSK</th>
+                                                                                          <tr>
+                                                                                              <tr>
+                                                                                                  <th>MSC NAOMI</th>
+                                                                                                  <th>MSC NAOMI	IP128A</th>
+                                                                                                  <th>04.08.2021- 07:30AM</th>
+                                                                                                  <th>04.08.2021 - 08:30AM</th>
+                                                                                                  <th>05.08.2021- 08:30AM	</th>
+                                                                                                  <th>MSC</th>
+                                                                                                  <tr>
+                                                                                                      <svg width="100" height="100">
+                                                                                                          <circle cx="50" cy="50" r="40"
+                                                                                                          stroke="red" stroke-width="4" fill="blue" />
+                                                                                                        Sorry, your browser does not support inline SVG.
+                                                                                                        </svg>
+                                                                                                        <svg width="100" height="100">
+                                                                                                            <circle cx="50" cy="50" r="40"
+                                                                                                            stroke="purple" stroke-width="4" fill="orange" />
+                                                                                                          Sorry, your browser does not support inline SVG.
+                                                                                                          </svg>
+                                                                                                          <svg width="100" height="100">
+                                                                                                              <circle cx="50" cy="50" r="40"
+                                                                                                              stroke="black" stroke-width="4" fill="green" />
+                                                                                                            Sorry, your browser does not support inline SVG.
+                                                                                                            </svg>
+                                                                                                          
+                                                                                                                                                                                                                                                
+      
+        
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>

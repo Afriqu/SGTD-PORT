@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{marginMSC-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+p{
+  background:deeppink;
+  color:white;
+}
+Menu{
+  background:deeppink;
+}
+</style>
+<body class="w3-light-grey">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">Menu</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">accuiel</a> 
+  <a href="pages/apropos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">a propos</a> 
+  <a href="pages/contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">contact</a>
+  <a href="pages/service.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Service</a>
+  <a href="pages/document.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">document</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SGTD</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="images/qs.jpg" style="height:900px" onclick="onClick(this)" alt="Canoeing again">
+      <img src=images/djib.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="
+      
+      ">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)
+      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" 
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt=>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="/w3images/man_besnch.jpg" style="width:100%" onclick="onClick(this)
+      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" 
+      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" 
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" 
+      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+<!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b> accuiel </b></h4>
+    <img src="/w3images/avatar_hat.jpg" alt="je" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      
+      <p>
+        Bienvenue chez SGTD Doraleh Terminal
+        
+        Société de Gestion du Terminal à conteneurs de Doraleh (SGTD) est l’opérateur du terminal le plus moderne et le plus avancé de l’Afrique de l’Est. Principal facilitateur du commerce, le terminal le plus performant de la région relie les marchés locaux à la chaîne d’approvisionnement mondiale.
+        
+        Situé à Djibouti, à l’entrée de la Mer Rouge et sur la deuxième voie de navigation la plus fréquentée au monde, SGTD est le port de choix pour les marchés d’Afrique de l’Est ainsi qu’une plaque tournante régionale pour le transbordement, agissant ainsi comme principale entrée vers l’Éthiopie enclavée.
+        
+      </p>
+      <p>https://www.sgtd-terminal.com/</p>
+      <p>tel: 5353 35531</p>
+      <hr class="w3-opacity">
+      </div>
+      <p>Image with 50% opacity:</p>
+<img src="/images/cop.jpg" alt="Forest" width="400" height="300">
+<h4>(REPUBLIQUE DE DJIBOUTI ) - Il y a un an, le 22 février 2018, l’État djiboutien mettait fin de manière anticipée à la concession du terminal à conteneurs de Doraleh, attribuée en 2006 à la société Doraleh Container Terminal (DCT), entreprise contrôlée de facto par l’actionnaire minoritaire DP World.</h4>
+
+<h4>Un an après la rupture de la concession, motivée par les impératifs de développement du pays et le contrôle de ses infrastructures stratégiques, le terminal à conteneurs de Doraleh s’est imposé comme une structure portuaire performante, opérée par une entreprise djiboutienne à capitaux 100% public, la SGTD, qui œuvre pour l’intérêt commun. Et cela malgré les campagnes de « fake news », la multiplication des procédures légales, les tentatives d’intimidations de l’État djiboutien et de ses partenaires stratégiques par DP World.</h4>
+
+<h4>Situé à l’embouchure du détroit de Bab el Mandeb, aux carrefours des principales routes commerciales du monde, le terminal portuaire a clairement de multiples vocations : servir sa région, et en premier lieu la nation éthiopienne sœur, mais aussi se positionner comme une grande plateforme de transbordement, en ligne direct avec l’Asie.</h4>
+
+<h4>Début février, devant les membres de la commission des forces armées du Sénat américain, le général Thomas Waldhauser, commandant en chef d’Africom (United States Africa Command) soulignait lui-même que le port à container de Doraleh fournissait de meilleures prestations depuis le départ de DP World. Et que la République de Djibouti était un partenaire stratégique important des États-Unis grâce aux plateformes logistiques et stratégiques que le pays offre aux forces américaines dans la région et en Afrique.</h4>
+
+<h4>Les ambitions de Djibouti ne se limitent pas au port de Doraleh. Le terminal à conteneurs constitue l’une des pièces maîtresses d’un ambitieux projet de développement national : faire de Djibouti un hub commercial et logistique de premier plan entre l’Asie, l’Afrique et le reste du monde. Au développement de Doraleh s’ajoute la mise en place du nouveau port multi-purpose sur le même site (DMP, mai 2017) et l’ouverture des ports de Goubet et de Tadjourah (juin 2017). À cette montée en puissance, il faut ajouter le développement de la nouvelle zone franche, qui a vocation à être la plus grande d’Afrique (inaugurée en juillet 2018).</h4>
+<img src="/images/son.jpg" alt="Forest" width="300" height="300">
+      <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
